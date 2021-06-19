@@ -4,6 +4,8 @@ header {
   position: fixed;
   width: 100%;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 main {
@@ -26,4 +28,15 @@ main {
 
 #drawer-button {
   display: none;
+}
+
+label::after {
+  content: "OPEN";
+  margin-left: 24px;
+  border: 1px solid white;
+  padding: 16px;
+}
+
+#drawer-button:checked ~ header > label::after {
+  content: "CLOSE";
 }
