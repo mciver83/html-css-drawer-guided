@@ -20,6 +20,8 @@ main {
   height: 100%;
   border-top: 1px solid white;
   transform: translateX(-400px);
+  transition: transform 0.3s ease-in;
+  position: fixed;
 }
 
 #drawer-button:checked ~ main > #drawer {
@@ -39,4 +41,8 @@ label::after {
 
 #drawer-button:checked ~ header > label::after {
   content: "CLOSE";
+}
+
+p {
+  margin: 16px;
 }
