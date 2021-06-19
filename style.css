@@ -23,3 +23,7 @@ main {
 #drawer-button:checked ~ main > #drawer {
   transform: translateX(0);
 }
+
+#drawer-button {
+  display: none;
+}
