@@ -19,3 +19,7 @@ main {
   border-top: 1px solid white;
   transform: translateX(-400px);
 }
+
+#drawer-button:checked ~ main > #drawer {
+  transform: translateX(0);
+}
